@@ -1,0 +1,45 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background-image: url("../public/Images/rose-shape.png"),url("../public/Images/bottom-shape.png");
+  background-position: right top, bottom center;
+  background-repeat: no-repeat;
+  background-size: 50%,100%;
+}
+
+.projects {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.projects::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 5px;
+  background-color: #176B87; 
+  border-radius: 4px;
+}
+
