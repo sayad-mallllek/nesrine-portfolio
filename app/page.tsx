@@ -106,7 +106,7 @@ export default function Home() {
             isMobile ? "text-xs" : "text-sm"
           }`}
         >
-          <a href="mailto:mohamadhawa421@gmail.com">Send me an email!</a>
+          <a href="mailto:nesrinsalameh12@gmail.com">Send me an email!</a>
         </button>
       </Flexbox>
     </main>
